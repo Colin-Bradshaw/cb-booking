@@ -7,12 +7,6 @@ pipeline {
         AWS_CLI = '/usr/local/bin/aws'
     }
     stages {
-        stage('init') {
-            steps {
-                sh 'rm -r CICD-practice'
-                sh 'git clone https://github.com/Colin-Bradshaw/CICD-practice.git'
-            }
-        }
         stage('build and scan') { 
             steps {
                 // booking
